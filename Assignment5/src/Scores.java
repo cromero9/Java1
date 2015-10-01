@@ -7,17 +7,16 @@ class Scores
 	{
 		try
 		{
-			for(int i=0; i<5; i++)
+			for(int i=0; i<2; i++)
 			{
 				if(test[i]<0||test[i]>100){
-					throw new IllegalArgumentException("Number cannot be"
-							+ "less than 0 and greater than 100");
+					throw new IllegalArgumentException("Number cannot be less than 0 and greater than 100");
 				}
 				else{
 					score[i]=test[i];
 				}
 			}
-			System.out.println("Average is: "+ Average());
+			System.out.println("Average is: "+ average());
 		}
 		catch(IllegalArgumentException e)
 		{
@@ -25,15 +24,15 @@ class Scores
 		}
 	}
 	
-	public double Average()
+	public double average()
 	{
 		int sum=0;
 		double avg;
-		for(int i=0;i<5;i++)
+		for(int i=0;i<2;i++)
 		{
 			sum+=score[i];
 		}
-		avg=sum/5;
+		avg=sum/2;
 		return avg;
 	}
 
