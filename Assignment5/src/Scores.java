@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 class Scores 
 {
-	private int score[]=new int[5];
+	private int score[]=new int[2];
 	public Scores(int test[])
 	{
 		try
